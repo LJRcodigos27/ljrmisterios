@@ -9,7 +9,12 @@
     background-image: image(CELULAR2.webp);
     background-color: darkkhaki;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100vw;
+    height: 100vh;
     border: 10px;
+    background-size: contain;
+    background-repeat: no repeat;
+    background position: left botton;
     }
     h1{
         color: black;
@@ -42,7 +47,7 @@
 </head>
 <body>
 <h1>LJr phone</h1>
- <img src="CELULAR2.webp" alt="celular">
+ <img src="phone 274.webp" alt="ljr phone">
  <h1>Crie seu cadastro de usuário LJR</h1>
  <form action="cadastro.php" method="get" autocomplete="off">
     <label for="isu">usuário</label>
@@ -50,14 +55,18 @@
     <label for="isenha">senha do usuário</label>
     <input type="password" name="sen" id="isen" required minlenght="8" maxlenght="14" placeholder="digite uma senha com 8 digitos"> <br>
     <h3>termos e condições</h3>
-    <input type="checkbox" name="eu aceito" id="iaceito"> <label for="iaceito">termos do aparelho </label>
+    <input type="checkbox" name="eu aceito" id="iaceito"> <label for="iaceito">eu concordo com os termos do aparelho </label>
+    <input type="checkbox" name="eu sou menor de idade" id="imenoridade"> <label for="imenoridade">eu sou menor de idade</label>
     <input type="checkbox" name="eu sou + 18" id="i18"> <label for="i+18">Eu sou +18 de idade</label><br>
     <h3>Quais notícias voce quer receber?</h3>
-    <input type="checkbox" name="esportes" id="iesportes"><label for="iespotes">noticias de esportes</label><br>
-    <input type="checkbox" name="noticias" id="inoticias"><label for="inoticias">noticias do dia-a-dia</label><br>
-    <input type="checkbox" name="filmes" id="ifilmes"><label for="ifilmes">noticias de filmes</label><br>
-    <input type="checkbox" name="musicas" id="imusicas"><label for="musicas">noticias do mundo musical e artístico</label><br>
-    <input type="checkbox" name="nenhuma" id="inenhuma"><label for="inenhuma">nenhuma</label><br>
+    <label for="noticias de">noticias de
+    <option value="saúde">saúde</option>
+    <option value="profissões">profissões</option>
+    <option value="política">política</option>
+    <option value="religião">religião</option>
+    <option value="esportes">esportes</option>
+    </label>
+    <br>
  </form>
  <main>
     <section>
