@@ -12,9 +12,11 @@
     width: 100vw;
     height: 100vh;
     border: 10px;
+    display: inline-block;
     background-size: contain;
     background-repeat: no repeat;
     background position: left botton;
+    orientation: portrait;
     }
     h1{
         color: black;
@@ -34,6 +36,13 @@
         color: moccasin;
         border: 3cap;
         font-size: 20px;
+    }
+    h4 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        background-color: beige;
+        color: cornflowerblue;
+        border: black;
     }
     section img  {
         position:relative;
@@ -58,16 +67,22 @@
     <input type="checkbox" name="eu aceito" id="iaceito"> <label for="iaceito">eu concordo com os termos do aparelho </label>
     <input type="checkbox" name="eu sou menor de idade" id="imenoridade"> <label for="imenoridade">eu sou menor de idade</label>
     <input type="checkbox" name="eu sou + 18" id="i18"> <label for="i+18">Eu sou +18 de idade</label><br>
+    <h3>acessibilidade do celular</h3>
+    <h4>Eu quero obrilho</h4>
+    <input type="range" name="brilho do celular" id="ibrilho">
+    <h4>Eu quero o volume</h4>
+    <input type="range" name="volume do celular" id="ivolume">
     <h3>Quais notícias voce quer receber?</h3>
-    <label for="noticias de">noticias de
-    <option value="saúde">saúde</option>
-    <option value="profissões">profissões</option>
-    <option value="política">política</option>
-    <option value="religião">religião</option>
-    <option value="esportes">esportes</option>
-    </label>
+    <input type="button" value="eu quero receber noticias">
+    <input type="submit" value="noticias">
+    <option value="noticias">Eu quero receber noticias de:
+        <option value="dia">dia-a-dia</option>
+        <option value="saude">saude</option>
+        <option value="trabalho">trabalho e economia</option>
+        <option value="fitness">vida fitness</option>
+        <option value="tecnologia">tecnologia</option>
+    </option>
     <br>
- </form>
  <main>
     <section>
         <h2>MENU</h2>
@@ -82,5 +97,7 @@
         <img src="calculadora.webp" alt="">
     </section>
  </main>
+ <h1>Quem sou eu</h1><br>
+ <p>Lourinaldo Junior, estudante de Filosofia, um estudioso de computação, design digital e programação.</p>
 </body>
 </html>
